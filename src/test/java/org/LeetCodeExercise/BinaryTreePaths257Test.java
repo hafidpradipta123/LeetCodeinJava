@@ -14,10 +14,15 @@ class BinaryTreePaths257Test {
         BinaryTreePaths257 btp = new BinaryTreePaths257();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(7);
         root.left.right = new TreeNode(5);
+        root.left.right.right = new TreeNode(9);
+        root.right = new TreeNode(3);
+        root.right.right = new TreeNode(10);
+        root.right.right.left = new TreeNode(12);
 
-        List<String> expected = List.of("1->2->5", "1->3");
+
+        List<String> expected = List.of("1->2->7","1->2->5->9", "1->3->10->12");
         List<String> actual = btp.binaryTreePaths(root);
 
         assertEquals(expected, actual);

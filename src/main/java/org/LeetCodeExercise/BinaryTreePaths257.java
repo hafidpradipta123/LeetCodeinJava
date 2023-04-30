@@ -24,7 +24,7 @@ public class BinaryTreePaths257 {
             return;
 
         }
-        if (node.left != null) dfs(node.left, current_path, result);
+        if (node.left != null) dfs(node.left, current_path, result); // keep going
         if (node.right != null) dfs(node.right, current_path, result);
 
     }

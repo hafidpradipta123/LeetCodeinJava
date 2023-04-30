@@ -13,7 +13,7 @@ public class ConstructBinaryTreeTraveral105 {
         TreeNode root = new TreeNode(preorder[preStart]);
 
         int inIndex = 0;
-        for(int  i= inStart; i < inEnd; i++){
+        for(int  i= inStart; i <= inEnd; i++){
             if (root.val == inorder[i]){
                 inIndex = i;
             }
