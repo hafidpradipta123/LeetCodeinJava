@@ -8,7 +8,7 @@ class BestTimetoBuyAndSellStockTest {
 
     @Test
     void maxProfit() {
-        BestTimetoBuyAndSellStock buy = new BestTimetoBuyAndSellStock();
+        BestTimetoBuyAndSellStock121 buy = new BestTimetoBuyAndSellStock121();
         int [] prices = {7,1,5,3,6,4};
         int expected = 5;
         int result= buy.maxProfit(prices);

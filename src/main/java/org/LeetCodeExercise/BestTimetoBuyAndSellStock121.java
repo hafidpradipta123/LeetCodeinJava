@@ -1,8 +1,8 @@
 package org.LeetCodeExercise;
 
-public class BestTimetoBuyAndSellStock {
+public class BestTimetoBuyAndSellStock121 {
     public int maxProfit(int[] prices){
-        int min_val = Integer.MAX_VALUE;
+        int min_val = Integer.MAX_VALUE; // because 32 bit signed integer. 2^31-1
         int max_profit = 0;
 
         for (int i = 0; i < prices.length; i++){
