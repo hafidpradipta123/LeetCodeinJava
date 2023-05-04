@@ -35,7 +35,7 @@ public class SurroundedRegion130 {
 
         if(board[i][j] == 'O') board[i][j] = '*';
 
-        if( i >0 && board[i-1][j] == 'O'){
+        if( i >0 && board[i-1][j] == 'O'){ //check the top
             boundaryDFS(board, i-1, j);
         }
         if( i < board.length-1 && board[i+1][j] == 'O'){ //KITA MAU NGECEK DI BAWAHNYA
