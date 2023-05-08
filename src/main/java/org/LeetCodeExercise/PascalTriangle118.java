@@ -3,7 +3,7 @@ package org.LeetCodeExercise;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalTriangle {
+public class PascalTriangle118 {
 
 
     public List<List<Integer>> generate(int numRows) {
@@ -21,7 +21,7 @@ public class PascalTriangle {
             List<Integer> row = new ArrayList<>();
             row.add(1);
 
-            for (int j = 1; j < 1; j++) {
+            for (int j = 1; j < i; j++) {
                 row.add(prev_row.get(j - 1) + prev_row.get(j));
             }
             row.add(1);

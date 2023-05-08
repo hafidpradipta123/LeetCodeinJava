@@ -1,6 +1,6 @@
 package org.LeetCodeExercise;
 
-public class TwoSum {
+public class TwoSum1 {
     public int [] twoSum(int [] numbers, int target){
         int a_pointer= 0;
         int b_pointer = numbers.length -1;
@@ -15,9 +15,9 @@ public class TwoSum {
 
                 }
             else{
-                return new int [] {a_pointer+1, b_pointer+1};
+                return new int [] {a_pointer, b_pointer};
             }
         }
-        return new int[]{a_pointer+1, b_pointer+1};
+        return new int[]{a_pointer, b_pointer};
     }
 }

@@ -9,7 +9,7 @@ class TwoSumTest {
        int [] nums = {2,7,11,15};
        int target = 9;
 
-       TwoSum ts= new TwoSum();
+       TwoSum1 ts= new TwoSum1();
        int [] result = ts.twoSum(nums, target);
 
     }
