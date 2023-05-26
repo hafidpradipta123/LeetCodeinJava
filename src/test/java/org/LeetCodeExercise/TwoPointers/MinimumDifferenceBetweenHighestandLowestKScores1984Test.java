@@ -10,7 +10,7 @@ class MinimumDifferenceBetweenHighestandLowestKScores1984Test {
     void minimumDifference() {
         MinimumDifferenceBetweenHighestandLowestKScores1984 formula = new MinimumDifferenceBetweenHighestandLowestKScores1984();
         int[] nums = {9,4,1,7};
-        int k = 1;
+        int k = 2;
         int expected = 2;
         int result = formula.minimumDifference(nums,k);
         assertEquals(expected,result );

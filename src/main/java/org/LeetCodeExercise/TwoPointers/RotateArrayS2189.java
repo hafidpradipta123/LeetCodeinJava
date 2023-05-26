@@ -1,6 +1,6 @@
-package org.LeetCodeExercise.Unclassified;
+package org.LeetCodeExercise.TwoPointers;
 
-public class RotateArray189 {
+public class RotateArrayS2189 {
     public void rotate(int[] nums, int k){
         k = k % nums.length;
         reverse(nums, 0, nums.length-1);

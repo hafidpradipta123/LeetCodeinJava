@@ -12,7 +12,7 @@ public class BaseballGame682 {
                 int score2 = st.peek();
                 int score3 = score1 + score2;
                 st.push(score1);
-                st.push(score2);
+                st.push(score3);
             } else if(op.equals("D") && !st.isEmpty()){
                 int score = st.peek();
                 st.push(score*2);

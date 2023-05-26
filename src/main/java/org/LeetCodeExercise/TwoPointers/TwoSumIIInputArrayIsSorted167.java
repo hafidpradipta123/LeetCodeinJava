@@ -12,6 +12,12 @@ public class TwoSumIIInputArrayIsSorted167 {
 
             if (num_a + num_b == target) break;
 
+            if (num_a + num_b <target){
+                a_pointer ++;
+                continue;
+            }
+            b_pointer--;
+
         }
         return new int[] {a_pointer + 1, b_pointer + 1};
     }

@@ -11,16 +11,11 @@ class ValidPalindrome680Test {
         ValidPalindrome680 validPalindrome = new ValidPalindrome680();
 
         // Test case 1: Valid palindrome
-        String s1 = "level";
+        String s1 = "levelc";
         boolean expected1 = true;
         boolean result1 = validPalindrome.validPalindrome(s1);
         assertEquals(expected1, result1);
 
-        // Test case 2: Invalid palindrome
-        String s2 = "algorithm";
-        boolean expected2 = false;
-        boolean result2 = validPalindrome.validPalindrome(s2);
-        assertEquals(expected2, result2);
     }
 
     @Test

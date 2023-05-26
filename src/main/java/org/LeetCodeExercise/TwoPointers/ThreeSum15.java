@@ -22,6 +22,7 @@ public class ThreeSum15 {
                         miniSol.add(nums[i]);
                         miniSol.add(nums[left]);
                         miniSol.add(nums[right]);
+                        sol.add(miniSol);
                         while (left < right && nums[left] == nums[left + 1]){
                             left++;
 

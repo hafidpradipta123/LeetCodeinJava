@@ -8,7 +8,7 @@ class RemoveDuplicatesfromSortedArrayII80Test {
 
     @Test
     void removeDuplicates() {
-        RemoveDuplicatesFromSortedArray26 formula = new RemoveDuplicatesFromSortedArray26();
+        RemoveDuplicatesfromSortedArrayII80 formula = new RemoveDuplicatesfromSortedArrayII80();
         int [] nums = {0,0,1,1,1,2,2,3,3,4};
         int output = 5;
         int result = formula.removeDuplicates(nums);
