@@ -1,5 +1,4 @@
-package org.LeetCodeExercise.Unclassified;
-
+package org.LeetCodeExercise.Trees;
 public class LowestCommonAncestorBinaryTree235 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (p.val < root.val && q.val < root.val) {

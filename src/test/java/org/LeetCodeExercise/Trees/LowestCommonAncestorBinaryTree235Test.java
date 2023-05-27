@@ -1,7 +1,6 @@
-package org.LeetCodeExercise.Unclassified;
+package org.LeetCodeExercise.Trees;
 
-import org.LeetCodeExercise.Unclassified.LowestCommonAncestorBinaryTree235;
-import org.LeetCodeExercise.Unclassified.TreeNode;
+import org.LeetCodeExercise.Trees.LowestCommonAncestorBinaryTree235;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

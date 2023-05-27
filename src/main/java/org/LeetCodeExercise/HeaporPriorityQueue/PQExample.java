@@ -11,32 +11,36 @@ public class PQExample {
 
            // {2,7,4,1,8,1,9,15,16,20,23,22}
 
-            // Adding elements to the priority queue
+           // Adding elements to the priority queue
+/*            priorityQueue.add(-2);
+            priorityQueue.add(-7);
+            priorityQueue.add(-4);
+            priorityQueue.add(-1);
+            priorityQueue.add(-8);
+            priorityQueue.add(-1);*/
+
+
+
+
+            // Printing the elements in the priority queue
+     //       System.out.println("Priority Queue elements (natural ordering): " + priorityQueue);
+
+
             priorityQueue.add(2);
             priorityQueue.add(7);
             priorityQueue.add(4);
             priorityQueue.add(1);
             priorityQueue.add(8);
-            priorityQueue.add(1);
-            priorityQueue.add(2);
-            priorityQueue.add(4);
-            priorityQueue.add(5);
-            priorityQueue.add(7);
             priorityQueue.add(3);
-            priorityQueue.add(15);
-            priorityQueue.add(16);
-            priorityQueue.add(20);
-            priorityQueue.add(23);
-            priorityQueue.add(22);
-            priorityQueue.add(1);
-            priorityQueue.add(2);
             priorityQueue.add(4);
-            priorityQueue.add(5);
+            priorityQueue.add(9);
+            priorityQueue.add(12);
+            priorityQueue.add(1);
+            priorityQueue.add(4);
+            priorityQueue.add(17);
+            priorityQueue.add(20);
+            priorityQueue.add(2);
 
-
-
-            // Printing the elements in the priority queue
-            System.out.println("Priority Queue elements (natural ordering): " + priorityQueue);
 
             // Removing the element with the lowest value
             int minValue = priorityQueue.poll();
