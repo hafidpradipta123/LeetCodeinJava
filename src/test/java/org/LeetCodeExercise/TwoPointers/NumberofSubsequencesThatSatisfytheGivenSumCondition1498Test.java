@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NumberofSubsequencesThatSatisfytheGienSumCOndition1498Test {
+class NumberofSubsequencesThatSatisfytheGivenSumCondition1498Test {
 
     @Test
     void numSubseq() {
-        NumberofSubsequencesThatSatisfytheGienSumCOndition1498 formula = new NumberofSubsequencesThatSatisfytheGienSumCOndition1498();
+        NumberofSubsequencesThatSatisfytheGivenSumCondition1498 formula = new NumberofSubsequencesThatSatisfytheGivenSumCondition1498();
         int [] input = {3,5,6,7};
         int target = 9;
         int expected = 4;

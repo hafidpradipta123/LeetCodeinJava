@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class NumberofSubsequencesThatSatisfytheGienSumCOndition1498 {
+public class NumberofSubsequencesThatSatisfytheGivenSumCondition1498 {
     public int numSubseq(int [] nums, int target){
         int res = 0, mod = 1000000007, l =0, r = nums.length-1;
         List<Integer> pre = new ArrayList<>();
