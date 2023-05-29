@@ -17,10 +17,10 @@ class BinaryInorderTraversalRecursive94Test {
         root.right.left = new TreeNode(3);
 
         // Create an instance of the class under test
-        BinaryInorderTraversal94 binaryInorderTraversal94 = new BinaryInorderTraversal94();
+        BinaryInorderTraversalRecursive94 binaryInorderTraversalRecursive94 = new BinaryInorderTraversalRecursive94();
 
         // Perform the inorder traversal
-        List<Integer> result = binaryInorderTraversal94.inorderTraversal(root);
+        List<Integer> result = binaryInorderTraversalRecursive94.inorderTraversal(root);
 
         // Define the expected result
         List<Integer> expected = Arrays.asList(1, 3, 2);
