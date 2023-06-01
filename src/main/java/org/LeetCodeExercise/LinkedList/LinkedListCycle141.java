@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class LinkedListCycle141 {
     public boolean hasCycle(ListNode head){

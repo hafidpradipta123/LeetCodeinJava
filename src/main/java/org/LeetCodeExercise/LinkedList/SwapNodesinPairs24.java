@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class SwapNodesinPairs24 {
     public ListNode swapPairs(ListNode head){

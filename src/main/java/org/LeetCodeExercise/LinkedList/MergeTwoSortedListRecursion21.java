@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class MergeTwoSortedListRecursion21 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2){

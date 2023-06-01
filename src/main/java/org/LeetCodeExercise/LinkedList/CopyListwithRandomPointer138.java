@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 import java.util.HashMap;
 

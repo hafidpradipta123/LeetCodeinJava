@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class RemoveLinkedListElements203 {
     public ListNode removeElements(ListNode head, int val){

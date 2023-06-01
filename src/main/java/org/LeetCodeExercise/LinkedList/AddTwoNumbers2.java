@@ -1,6 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
-
-import java.util.List;
+package org.LeetCodeExercise.LinkedList;
 
 public class AddTwoNumbers2 {
     public ListNode addTwoNumbers (ListNode first, ListNode second){

@@ -1,6 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
-
-import java.util.List;
+package org.LeetCodeExercise.LinkedList;
 
 public class ReverseLinkedListRecursive206 {
     public ListNode reverseList(ListNode head){

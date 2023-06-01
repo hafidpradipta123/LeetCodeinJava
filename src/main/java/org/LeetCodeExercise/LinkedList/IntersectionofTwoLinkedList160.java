@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class IntersectionofTwoLinkedList160 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB){

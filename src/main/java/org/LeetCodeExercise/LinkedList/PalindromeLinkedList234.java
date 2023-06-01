@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class PalindromeLinkedList234 {
     public boolean isPalindrome(ListNode head){

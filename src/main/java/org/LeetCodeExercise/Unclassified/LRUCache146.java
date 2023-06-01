@@ -11,7 +11,7 @@ public class LRUCache146 {
     public LRUCache146 (int capacity){
         node_map = new HashMap<>(capacity);
         this.cache_capacity = capacity;
-        head.next= tail;
+        head.next= tail; // this is the double connection
         tail.prev = head;
 
     }
@@ -53,9 +53,9 @@ public class LRUCache146 {
 
     }
     public void add(Node node){
-        Node head_next = head.next;
-        node.next = head_next;
-        head_next.prev = node;
+        Node dummy = head.next;
+        node.next = dummy;
+        dummy.prev = node;
         head.next = node;
         node.prev = head;
 

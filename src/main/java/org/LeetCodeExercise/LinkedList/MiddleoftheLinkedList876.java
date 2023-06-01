@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class MiddleoftheLinkedList876 {
     public ListNode middleNode(ListNode head){

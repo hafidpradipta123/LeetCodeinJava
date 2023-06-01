@@ -1,4 +1,4 @@
-package org.LeetCodeExercise.LinkedLIst;
+package org.LeetCodeExercise.LinkedList;
 
 public class FindtheDuplicateNumber287 {
     public int findDuplicate(int [] nums){

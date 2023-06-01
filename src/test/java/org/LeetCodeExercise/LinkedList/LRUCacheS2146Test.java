@@ -1,16 +1,18 @@
-package org.LeetCodeExercise.Unclassified;
+package org.LeetCodeExercise.LinkedList;
 
-import org.LeetCodeExercise.Unclassified.LRUCache146;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class LRUCache146Test {
+class LRUCacheS2146Test {
+
     @Test
     void testLRUCache() {
-        LRUCache146 cache = new LRUCache146(2);
+        org.LeetCodeExercise.LinkedList.LRUCacheS2146 cache = new LRUCacheS2146(4);
 
         cache.put(1, 1);
         cache.put(2, 2);
+        cache.put(3, 3);
+        cache.put(4, 4);
         Assertions.assertEquals(1, cache.get(1)); // returns 1
         cache.put(3, 3);
         Assertions.assertEquals(-1, cache.get(2)); // returns -1 (not found)
@@ -25,13 +27,5 @@ class LRUCache146Test {
 
     @Test
     void put() {
-    }
-
-    @Test
-    void add() {
-    }
-
-    @Test
-    void remove() {
     }
 }
