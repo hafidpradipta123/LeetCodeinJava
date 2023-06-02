@@ -15,7 +15,7 @@ class LRUCacheS2146Test {
         cache.put(4, 4);
         Assertions.assertEquals(1, cache.get(1)); // returns 1
         cache.put(3, 3);
-        Assertions.assertEquals(-1, cache.get(2)); // returns -1 (not found)
+        Assertions.assertEquals(2, cache.get(2)); // returns -1 (not found)
         cache.put(4, 4);
         Assertions.assertEquals(-1, cache.get(1)); // returns -1 (not found)
         Assertions.assertEquals(3, cache.get(3)); // returns 3

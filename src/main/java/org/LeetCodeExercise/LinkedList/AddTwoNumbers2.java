@@ -13,7 +13,7 @@ public class AddTwoNumbers2 {
                             ((first != null) ? first.val :0)+
                             ((second != null) ? second.val : 0)
                             );
-            r = sum & 10;
+            r = sum % 10;
             q = sum / 10;
             ListNode newNode = new ListNode(r);
             if (head == null){

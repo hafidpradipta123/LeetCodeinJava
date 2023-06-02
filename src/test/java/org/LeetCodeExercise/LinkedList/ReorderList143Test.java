@@ -14,13 +14,19 @@ class ReorderList143Test {
             head.next = new ListNode(2);
             head.next.next = new ListNode(3);
             head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+            head.next.next.next.next.next = new ListNode(6);
+            head.next.next.next.next.next.next = new ListNode(7);
 
-            // Create the expected output linked list
+
+        // Create the expected output linked list
             ListNode expected = new ListNode(1);
-            expected.next = new ListNode(4);
+            expected.next = new ListNode(7);
             expected.next.next = new ListNode(2);
-            expected.next.next.next = new ListNode(3);
-
+            expected.next.next.next = new ListNode(6);
+            expected.next.next.next.next = new ListNode(3);
+            expected.next.next.next.next.next = new ListNode(5);
+            expected.next.next.next.next.next.next = new ListNode(4);
             // Call the reorderList method
             ReorderList143 reorderList = new ReorderList143();
             reorderList.reorderList(head);

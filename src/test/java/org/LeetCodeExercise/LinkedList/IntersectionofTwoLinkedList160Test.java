@@ -10,9 +10,9 @@ class IntersectionofTwoLinkedList160Test {
     void getIntersectionNode() {
         // Create the linked lists
         ListNode commonNode = new ListNode(8);
-        ListNode list1 = new ListNode(4);
-        list1.next = new ListNode(1);
-        list1.next.next = commonNode;
+        ListNode list1 = new ListNode(4); //1
+        list1.next = new ListNode(1);//2
+        list1.next.next = commonNode;//3
         list1.next.next.next = new ListNode(4);
         list1.next.next.next.next = new ListNode(5);
 

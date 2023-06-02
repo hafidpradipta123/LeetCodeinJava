@@ -58,7 +58,7 @@ public class LRUCache146 {
 
         // insert node at right
         public void insert(Node node) {
-            Node prev = this.right.prev;
+            Node prev = this.right.prev; // technically left
             Node next = this.right;
 
             prev.next = node;
