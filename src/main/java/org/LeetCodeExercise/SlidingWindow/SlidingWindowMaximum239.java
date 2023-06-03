@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class SlidingWindowMaximum239 {
-    public int[] maxSlidingWIndow(int[] nums, int k){
+    public int[] maxSlidingWindow(int[] nums, int k){
         int[] ans = new int[nums.length -k + 1];
         int j = 0;
         Deque<Integer> q = new LinkedList<>();

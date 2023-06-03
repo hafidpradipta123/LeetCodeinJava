@@ -1,31 +1,89 @@
 package org.LeetCodeExercise.Graphs;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+
 public class AccountsMerge721 {
-    public boolean checkMove(char[][] board, int rMove, int cMove, char color) {
-        int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1},
-                {1, 1}, {-1, -1}, {1, -1}, {-1, 1}};
+    class UnionFind {
+        int[] parent;
+        int[] weight;
 
-        board[rMove][cMove] = color;
-        for (int[] d : direction)
-            if (legal(board, rMove, cMove, color, d)) return true;
-        return false;
-    }
-    boolean legal(char [][] board, int row, int col, char color, int[] direc){
-        int ROWS = board.length, COLS = board[0].length;
-        int dr = direc[0], dc = direc[1];
-        row = row + dr;
-        col = col + dc;
-        int length = 1;
+        public UnionFind(int num) {
+            parent = new int[num];
+            weight = new int[num];
 
-        while( 0 <= row && row < ROWS && 0 <= col && col < COLS){
-            length += 1;
-            if(board[row][col] == '.') return false;
-            if(board[row][col] == color)
-                return length >= 3;
-            row = row + dr;
-            col = col + dc;
+            for (int i = 0; i < num; i++) {
+                parent[i] = i;
+                weight[i] = i;
+            }
         }
-        return false;
+
+        public void union(int a, int b) {
+            int rootA = root(a);
+            int rootB = root(b);
+
+            if (rootA == rootB) {
+                return;
+            }
+
+            if (weight[rootA] > weight[rootB]) {
+                parent[rootB] = rootA;
+                weight[rootA] += weight[rootB];
+            } else {
+                parent[rootA] = rootB;
+                weight[rootB] += weight[rootA];
+            }
+        }
+
+        public int root(int a) {
+            if (parent[a] == a) {
+                return a;
+            }
+
+            parent[a] = root(parent[a]);
+            return parent[a];
+        }
     }
 
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        int size = accounts.size();
+
+        UnionFind uf = new UnionFind(size);
+
+        HashMap<String, Integer> emailToId = new HashMap<>();
+        for (int i = 0; i < size; i++) {
+            List<String> details = accounts.get(i);
+            for (int j = 1; j < details.size(); j++) {
+                String email = details.get(j);
+
+                if (emailToId.containsKey(email)) {
+                    uf.union(i, emailToId.get(email));
+                } else {
+                    emailToId.put(email, i);
+                }
+            }
+        }
+
+        HashMap<Integer, List<String>> idToEmails = new HashMap<>();
+        for (String key : emailToId.keySet()) {
+            int root = uf.root(emailToId.get(key));
+
+            if (!idToEmails.containsKey(root)) {
+                idToEmails.put(root, new ArrayList<String>());
+            }
+
+            idToEmails.get(root).add(key);
+        }
+
+        List<List<String>> mergedDetails = new ArrayList<>();
+        for (Integer id : idToEmails.keySet()) {
+            List<String> emails = idToEmails.get(id);
+            Collections.sort(emails);
+            emails.add(0, accounts.get(id).get(0));
+        }
+
+        return mergedDetails;
+    }
 }
