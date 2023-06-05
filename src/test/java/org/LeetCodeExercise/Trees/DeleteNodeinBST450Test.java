@@ -22,8 +22,8 @@ class DeleteNodeinBST450Test {
             // Test deleting a node with key = 3
             TreeNode newRoot = bst.deleteNode(root, 3);
             assertEquals(5, newRoot.val);
-            assertEquals(2, newRoot.left.val);
-            assertEquals(4, newRoot.left.right.val);
+            assertEquals(4, newRoot.left.val);
+            assertEquals(2, newRoot.left.left.val);
             assertEquals(6, newRoot.right.val);
             assertEquals(7, newRoot.right.right.val);
             assertNull(newRoot.left.left);

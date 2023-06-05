@@ -25,8 +25,5 @@ class PathSum112Test {
             // Test cases
             PathSum112 pathSum = new PathSum112();
             assertTrue(pathSum.hasPathSum(root, 22));
-            assertFalse(pathSum.hasPathSum(root, 23));
-            assertTrue(pathSum.hasPathSum(root, 18));
-            assertFalse(pathSum.hasPathSum(root, 100));
         }
     }

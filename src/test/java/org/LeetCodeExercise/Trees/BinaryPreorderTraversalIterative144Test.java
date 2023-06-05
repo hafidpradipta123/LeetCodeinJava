@@ -18,10 +18,10 @@ class BinaryPreorderTraversalIterative144Test {
         root.left.right = new TreeNode(5);
 
         // Create an instance of the class
-        BinaryPreorderTarversalRecursive1_144 binaryPreorderTraversal = new BinaryPreorderTarversalRecursive1_144();
+        BinaryPreorderTraversalIterative144 binaryPreorderTraversal = new BinaryPreorderTraversalIterative144();
 
         // Call the method
-        List<Integer> result = binaryPreorderTraversal.preorderTraversal(root);
+        List<Integer> result = binaryPreorderTraversal.preorderTraversalIterative(root);
 
         // Assert the expected output
         List<Integer> expected = Arrays.asList(1, 2, 4, 5, 3);
